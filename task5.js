@@ -2,7 +2,10 @@ const ws = new WebSocket('wss://echo-ws-service.herokuapp.com/');
 const chat = document.getElementById('chat');
 
 ws.onmessage = function(event) {
-    chat.innerHTML += `<p>Вы: ${event.data}</p>`;
+    // Если сообщение не содержит ссылку на геолокацию, выводим его в чат
+    if (!event.data.includes('Гео-локация:')) {
+        chat.innerHTML += `<p>Вы: ${event.data}</p>`;
+    }
 };
 
 function sendMessage() {
