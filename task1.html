@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Задание 1</title>
+</head>
+<body>
+    <h1>Задание 1: Флаги стран</h1>
+    <div class="flags">
+        <!-- Флаг России -->
+        <svg width="180" height="120">
+            <rect width="180" height="40" fill="white"/>
+            <rect y="40" width="180" height="40" fill="blue"/>
+            <rect y="80" width="180" height="40" fill="red"/>
+        </svg>
+
+        <!-- Флаг Франции -->
+        <svg width="180" height="120">
+            <rect width="60" height="120" fill="blue"/>
+            <rect x="60" width="60" height="120" fill="white"/>
+            <rect x="120" width="60" height="120" fill="red"/>
+        </svg>
+
+        <!-- Флаг Финляндии -->
+        <svg width="180" height="120">
+            <rect width="180" height="120" fill="white"/>
+            <rect x="50" width="20" height="120" fill="blue"/>
+            <rect y="50" width="180" height="20" fill="blue"/>
+        </svg>
+
+        <!-- Флаг Швейцарии с уменьшенной толщиной креста -->
+        <svg width="180" height="120" viewBox="0 0 5 3">
+            <rect width="5" height="3" fill="red"/>
+            <rect x="2.25" y="0.5" width="0.5" height="2" fill="white"/> <!-- Вертикальная полоса -->
+            <rect x="1.5" y="1.3" width="2" height="0.5" fill="white"/> <!-- Горизонтальная полоса -->
+        </svg>
+
+        <!-- Флаг Японии -->
+        <svg width="180" height="120">
+            <rect width="180" height="120" fill="white"/>
+            <circle cx="90" cy="60" r="36" fill="red"/>
+        </svg>
+    </div>
+    <button onclick="history.back()">Назад</button>
+</body>
+</html>
